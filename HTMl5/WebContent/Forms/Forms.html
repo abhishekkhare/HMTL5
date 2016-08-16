@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Form</title>
+</head>
+<body>
+	<form>
+		First name:<br> <input type="text" name="firstname"> <br>
+		Last name:<br> <input type="text" name="lastname">
+		<hr>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+		<input type="radio" name="gender" value="female"> Female<br>
+		<input type="radio" name="gender" value="other"> Other
+		<hr>
+		<input type="submit" value="Submit">
+		<hr>
+		<fieldset>
+			<legend>Personal information:</legend>
+			First name:<br> <input type="text" name="firstname"
+				value="Mickey"><br> Last name:<br> <input
+				type="text" name="lastname" value="Mouse"><br> <br>
+			<input type="submit" value="Submit">
+		</fieldset>
+
+		<hr>
+		<select name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select> <br> <select name="cars1">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected>Fiat</option>
+			<option value="audi">Audi</option>
+		</select> <br> <br>
+		<hr>
+		<textarea name="message" rows="10" cols="30">
+			The cat was playing in the garden.
+		</textarea>
+		<hr>
+		<button type="button" onclick="alert('Hello World!')">Click
+			Me!</button>
+		<hr>
+		<input list="browsers">
+		<datalist id="browsers">
+			<option value="Internet Explorer">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist>
+		<hr>
+		Username: <input type="text" name="user">
+		User password:<br> <input type="password" name="psw">
+  		Encryption: <keygen name="security">
+  		<input type="submit">
+  		<hr>
+  		<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+  <hr>
+    Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+  <br>
+  Birthday:
+  <input type="date" name="bday">
+  <br>
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+  <hr>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+  <br>
+  <input type="range" name="points" min="0" max="10">
+  <br>
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+  <br>
+  Select a week:
+  <input type="week" name="week_year">
+  <br>
+  Select a time:
+  <input type="time" name="usr_time">
+  <br>
+  Birthday (date and time):
+  <input type="datetime" name="bdaytime">
+  <br>
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+  <br>
+  E-mail:
+  <input type="email" name="email">
+  <br>
+  Search Google:
+  <input type="search" name="googlesearch">
+  <br>
+  Telephone:
+  <input type="tel" name="usrtel">
+  <br>
+  Add your homepage:
+  <input type="url" name="homepage">
+  <br>
+  
+	</form>
+</body>
+</html>

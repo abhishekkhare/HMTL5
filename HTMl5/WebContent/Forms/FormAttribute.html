@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Form Attributes</title>
+</head>
+<body>
+
+	<form action="action_page.php" id="form1">
+		First name: <input type="text" name="fname"><br> <input
+			type="submit" value="Submit">
+			<input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name is required" required><br>
+  
+  <input type="number" name="points" placeholder= "multiples of 3" step="3">
+	</form>
+
+	Last name:
+	<input type="text" name="lname" form="form1"> Try it Yourself »
+	<hr>
+	<hr>
+	<form action="action_page.php">
+		First name: <input type="text" name="fname"><br> Last
+		name: <input type="text" name="lname"><br> <input
+			type="submit" formmethod="post"  value="Submit"><br> 
+			<input type="submit"
+			formaction="demo_admin.asp" value="Submit as admin"> <br> 
+			<input
+			type="submit" formenctype="multipart/form-data"
+			value="Submit as Multipart/form-data"><br>
+	</form>
+</body>
+</html>

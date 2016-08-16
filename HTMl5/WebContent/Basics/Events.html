@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body onbeforeunload="return myonbeforeunload()" onload="myOnload()" onresize="myonresize()">
+	<input type="text" oncopy="myOnCopy()" value="Try to copy this text">
+	<p>Close this window, press F5 or click on the link below to invoke
+		the onbeforeunload event.</p>
+	<a href="http://www.google.com">Click here to go to google.com</a>
+	<br>
+	<img src="../images/w3html.gif" onload="loadImage()" width="100" height="132">
+
+	<p id="demo"></p>
+	<script>
+		function myOnCopy() {
+			document.getElementById("demo").innerHTML = "You copied text!"
+		}
+
+		function myonbeforeunload() {
+			return "Write something clever here...";
+		}
+
+		function loadImage() {
+			alert("Image is loaded");
+		}
+		function myOnload() {
+		    alert("Page is loaded");
+		}
+		function myonresize() {
+		    alert("You have changed the size of the browser window!");
+		}
+	</script>
+</body>
+</html>
+
