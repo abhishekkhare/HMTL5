@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic CSS</title>
+<style>
+/* The element Selector*/
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+	color: red;
+	text-align: right;
+}
+/* The id Selector */
+#para1 {
+	text-align: center;
+	color: green;
+}
+/* The class Selector */
+.center {
+	text-align: center;
+	color: yellow;
+}
+/* Class selector for specific HTML elements*/
+p.left {
+	text-align: left;
+	color: purple;
+}
+
+p.large {
+	font-size: 300%;
+}
+/* Grouping Selectors */
+h3, h2, h4 {
+	text-align: center;
+	color: blue;
+}
+</style>
+</head>
+<body>
+
+	<h1>My First CSS Example</h1>
+	<p>This is a paragraph.</p>
+	<p id="para1">Hello World!</p>
+	<h1 class="center">yellow and center-aligned heading</h1>
+	<p class="center">yellow and center-aligned paragraph.</p>
+
+	<h1 class="left">This heading will not be affected</h1>
+	<p class="left">This paragraph will be red and center-aligned.</p>
+
+	<p class="center large">This paragraph will be red, center-aligned,
+		and in a large font-size.</p>
+
+	<h2>Hello World!</h2>
+	<h3>Smaller heading!</h3>
+	<h4>More Smaller heading!</h4>
+</html>

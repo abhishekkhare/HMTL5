@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Margin CSS</title>
+<style>
+div.class1 {
+	border: 1px solid black;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 150px;
+	margin-left: 80px;
+	background-color: lightblue;
+}
+
+div.class2 {
+	border: 1px solid black;
+	margin: 100px 150px 100px 80px;
+	background-color: lightblue;
+}
+
+div.class3 {
+	width: 300px;
+	margin: auto;
+	border: 1px solid red;
+}
+
+div.container {
+	border: 1px solid red;
+	margin-left: 100px;
+}
+
+p.one {
+	margin-left: inherit;
+}
+
+h1.class1 {
+	margin: 0 0 50px 0;
+}
+
+h2.class1 {
+	margin: 20px 0 0 0;
+}
+/* Padding */
+div.padding1 {
+	border: 1px solid black;
+	background-color: lightblue;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+}
+
+div.padding2 {
+	border: 1px solid black;
+	background-color: lightblue;
+	padding: 50px 30px 50px 80px;
+}
+
+div {
+	border: 1px solid black;
+	background-color: lightblue;
+}
+
+div.ex1 {
+	padding: 25px 50px 75px 100px;
+}
+
+div.ex2 {
+	padding: 25px 50px 75px;
+}
+
+div.ex3 {
+	padding: 25px 50px;
+}
+
+div.ex4 {
+	padding: 25px;
+}
+</style>
+</head>
+<body>
+
+	<h2>Using individual margin properties</h2>
+
+	<div class="class1">This div element has a top margin of 100px, a
+		right margin of 150px, a bottom margin of 100px, and a left margin of
+		80px.</div>
+	<hr>
+	<h2>Using the margin shorthand property</h2>
+
+	<div class="class2">This div element has a top margin of 100px, a
+		right margin of 150px, a bottom margin of 100px, and a left margin of
+		80px.</div>
+	<hr>
+	<h2>Use of the auto Value</h2>
+	<p>You can set the margin property to auto to horizontally center
+		the element within its container. The element will then take up the
+		specified width, and the remaining space will be split equally between
+		the left and right margins:</p>
+
+	<div class="class3">This div will be centered because it has
+		margin: auto;</div>
+	<hr>
+	<h2>Use of the inherit value</h2>
+	<p>Let the left margin be inherited from the parent element:</p>
+
+	<div class="container">
+		<p class="one">This is a paragraph with an inherited left margin
+			(from the div element).</p>
+	</div>
+	<hr>
+	<p>In this example the h1 element has a bottom margin of 50px and
+		the h2 element has a top margin of 20px. Then, the vertical margin
+		between h1 and h2 should have been 70px (50px + 20px). However, due to
+		margin collapse, the actual margin ends up being 50px.</p>
+
+	<h1 class="class1">Heading 1</h1>
+	<h2 class="class1">Heading 2</h2>
+	<hr>
+	<h2>Using individual padding properties</h2>
+
+	<div class="padding1">This div element has a top padding of 50px,
+		a right padding of 50px, a bottom padding of 50px, and a left padding
+		of 80px.</div>
+	<hr>
+	<h2>Using the padding shorthand property</h2>
+
+	<div class="padding2">This div element has a top padding of 50px,
+		a right padding of 30px, a bottom padding of 50px, and a left padding
+		of 80px.</div>
+	<hr>
+	<h2>Using the padding shorthand property</h2>
+
+	<div class="ex1">This div element has a top padding of 25px, a
+		right padding of 50px, a bottom padding of 75px and a right padding of
+		100px.</div>
+	<br>
+
+	<div class="ex2">This div element has a top padding of 25px, a
+		left and right padding of 50px, and a bottom padding of 75px.</div>
+	<br>
+
+	<div class="ex3">This div element has a top and bottom padding of
+		25px, and a left and right padding of 50px.</div>
+	<br>
+
+	<div class="ex4">This div element has a top, right, bottom and
+		left paddding of 25px.</div>
+</body>
+</html>
