@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table CSS</title>
+<style>
+table.class1, th.class1, td.class1 {
+	border: 1px solid black;
+}
+
+table.class2 {
+	border-collapse: collapse;
+}
+
+table.class2, td.class2, th.class2 {
+	border: 1px solid black;
+}
+
+table.class3 {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+table.class4, td.class4, th.class4 {
+	border: 1px solid black;
+}
+
+table.class4 {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th.class4 {
+	height: 50px;
+}
+
+table.class5, td.class5, th.class5 {
+	border: 1px solid black;
+}
+
+table.class5 {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td.class5 {
+	height: 50px;
+	vertical-align: bottom;
+}
+
+table.class6 {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th.class6, td.class6 {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+tr.class6:hover {
+	background-color: #f5f5f5
+}
+
+table.class7 {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th.class7, td.class7 {
+	text-align: left;
+	padding: 8px;
+}
+
+tr.class7:nth-child(even) {
+	background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+	<h2>Add a border to a table:</h2>
+	<table class="class1">
+		<tr class="class1">
+			<th class="class1">Firstname</th>
+			<th class="class1">Lastname</th>
+		</tr>
+		<tr class="class1">
+			<td class="class1">Peter</td>
+			<td class="class1">Griffin</td>
+		</tr>
+		<tr class="class1">
+			<td class="class1">Lois</td>
+			<td class="class1">Griffin</td>
+		</tr>
+	</table>
+	<hr>
+	<h2>Let the borders collapse:</h2>
+	<table class="class2">
+		<tr class="class2">
+			<th class="class2">Firstname</th>
+			<th class="class2">Lastname</th>
+		</tr>
+		<tr class="class2">
+			<td class="class2">Peter</td>
+			<td class="class2">Griffin</td>
+		</tr>
+		<tr class="class2">
+			<td class="class2">Lois</td>
+			<td class="class2">Griffin</td>
+		</tr>
+	</table>
+	<p>
+		<b>Note:</b> If a !DOCTYPE is not specified, the border-collapse
+		property can produce unexpected results in IE8 and earlier versions.
+	</p>
+	<hr>
+	<h2>Single Border Around The Table:</h2>
+	<table class="class3">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Griffin</td>
+		</tr>
+		<tr>
+			<td>Lois</td>
+			<td>Griffin</td>
+		</tr>
+	</table>
+	<hr>
+	<h2>The width and height Properties</h2>
+	<p>Set the width of the table, and the height of the table header
+		row:</p>
+	<table class="class4">
+		<tr>
+			<th class="class4">Firstname</th>
+			<th class="class4">Lastname</th>
+			<th class="class4">Savings</th>
+		</tr>
+		<tr>
+			<td class="class4">Peter</td>
+			<td class="class4">Griffin</td>
+			<td class="class4">$100</td>
+		</tr>
+		<tr>
+			<td class="class4">Lois</td>
+			<td class="class4">Griffin</td>
+			<td class="class4">$150</td>
+		</tr>
+		<tr>
+			<td class="class4">Joe</td>
+			<td class="class4">Swanson</td>
+			<td class="class4">$300</td>
+		</tr>
+		<tr>
+			<td class="class4">Cleveland</td>
+			<td class="class4">Brown</td>
+			<td class="class4">$250</td>
+		</tr>
+	</table>
+	<hr>
+	<h2>The vertical-align Property</h2>
+	<p>This property sets the vertical alignment (like top, bottom, or
+		middle) of the content in th or td.</p>
+	<table class="class5">
+		<tr>
+			<th class="class5">Firstname</th>
+			<th class="class5">Lastname</th>
+			<th class="class5">Savings</th>
+		</tr>
+		<tr>
+			<td class="class5">Peter</td>
+			<td class="class5">Griffin</td>
+			<td class="class5">$100</td>
+		</tr>
+		<tr>
+			<td class="class5">Lois</td>
+			<td class="class5">Griffin</td>
+			<td class="class5">$150</td>
+		</tr>
+		<tr>
+			<td class="class5">Joe</td>
+			<td class="class5">Swanson</td>
+			<td class="class5">$300</td>
+		</tr>
+		<tr>
+			<td class="class5">Cleveland</td>
+			<td class="class5">Brown</td>
+			<td class="class5">$250</td>
+		</tr>
+	</table>
+	<hr>
+	<h2>Hoverable Table</h2>
+	<p>Move the mouse over the table rows to see the effect.</p>
+	<table class="class6">
+		<tr class="class6">
+			<th class="class6">First Name</th>
+			<th class="class6">Last Name</th>
+			<th class="class6">Points</th>
+		</tr>
+		<tr class="class6">
+			<td class="class6">Peter</td>
+			<td class="class6">Griffin</td>
+			<td class="class6">$100</td>
+		</tr>
+		<tr class="class6">
+			<td class="class6">Lois</td>
+			<td class="class6">Griffin</td>
+			<td class="class6">$150</td>
+		</tr>
+		<tr class="class6">
+			<td class="class6">Joe</td>
+			<td class="class6">Swanson</td>
+			<td class="class6">$300</td>
+		</tr>
+		<tr class="class6">
+			<td class="class6">Cleveland</td>
+			<td class="class6">Brown</td>
+			<td class="class6">$250</td>
+		</tr>
+	</table>
+	<hr>
+	<hr>
+	<h2>Striped Table</h2>
+	<p>For zebra-striped tables, use the nth-child() selector and add a
+		background-color to all even (or odd) table rows:</p>
+	<table class="class7">
+		<tr class="class7">
+			<th class="class7">First Name</th>
+			<th class="class7">Last Name</th>
+			<th class="class7">Points</th>
+		</tr>
+		<tr class="class7">
+			<td class="class7">Peter</td>
+			<td class="class7">Griffin</td>
+			<td class="class7">$100</td>
+		</tr>
+		<tr class="class7">
+			<td class="class7">Lois</td>
+			<td class="class7">Griffin</td>
+			<td class="class7">$150</td>
+		</tr>
+		<tr class="class7">
+			<td class="class7">Joe</td>
+			<td class="class7">Swanson</td>
+			<td class="class7">$300</td>
+		</tr>
+		<tr class="class7">
+			<td class="class7">Cleveland</td>
+			<td class="class7">Brown</td>
+			<td class="class7">$250</td>
+		</tr>
+	</table>
+</body>
+</html>

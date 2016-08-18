@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TextDecoration CSS</title>
+<style>
+body {
+	color: blue;
+}
+
+h1.class0 {
+	color: green;
+}
+
+h1.class1 {
+	text-align: center;
+}
+
+h2.class1 {
+	text-align: left;
+}
+
+h3.class1 {
+	text-align: right;
+}
+
+div.class1 {
+	border: 1px solid black;
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+}
+
+a.class1 {
+	text-decoration: none;
+}
+
+h1.class2 {
+	text-decoration: overline;
+}
+
+h2.class2 {
+	text-decoration: line-through;
+}
+
+h3.class2 {
+	text-decoration: underline;
+}
+
+p.uppercase {
+	text-transform: uppercase;
+}
+
+p.lowercase {
+	text-transform: lowercase;
+}
+
+p.capitalize {
+	text-transform: capitalize;
+}
+
+p.indent {
+	text-indent: 50px;
+}
+
+h1.spacing {
+	letter-spacing: 3px;
+}
+
+h2.spacing {
+	letter-spacing: -3px;
+}
+
+p.small {
+	line-height: 0.7;
+}
+
+p.big {
+	line-height: 1.8;
+}
+
+div.ex1 {
+	direction: rtl;
+}
+
+h1.word {
+	word-spacing: 10px;
+}
+
+h2.word {
+	word-spacing: -5px;
+}
+</style>
+</head>
+<body>
+	<h1 class="class0">This is heading 1</h1>
+	<p>This is an ordinary paragraph. Notice that this text is blue.
+		The default text color for a page is defined in the body selector.</p>
+	<hr>
+	<h1 class="class1">Heading 1 (center)</h1>
+	<h2 class="class1">Heading 2 (left)</h2>
+	<h3 class="class1">Heading 3 (right)</h3>
+
+	<p>The three headings above are aligned center, left and right.</p>
+	<hr>
+	<h1>Example text-align: justify;</h1>
+
+	<p>The text-align: justify; value stretches the lines so that each
+		line has equal width (like in newspapers and magazines).</p>
+
+	<div class="class1">In my younger and more vulnerable years my
+		father gave me some advice that I've been turning over in my mind ever
+		since. 'Whenever you feel like criticizing anyone,' he told me, 'just
+		remember that all the people in this world haven't had the advantages
+		that you've had.'</div>
+	<hr>
+	<p>
+		A link with no underline: <a href="http://www.w3schools.com"
+			class="class1">W3Schools.com</a>
+	</p>
+	<hr>
+	<h1 class="class2">This is heading 1</h1>
+	<h2 class="class2">This is heading 2</h2>
+	<h3 class="class2">This is heading 3</h3>
+	<hr>
+	<p class="uppercase">This is some text.</p>
+	<p class="lowercase">This is some text.</p>
+	<p class="capitalize">This is some text.</p>
+	<hr>
+	<p>In my younger and more vulnerable years my father gave me some
+		advice that I've been turning over in my mind ever since. 'Whenever
+		you feel like criticizing anyone,' he told me, 'just remember that all
+		the people in this world haven't had the advantages that you've had.'</p>
+	<hr>
+	<h1 class="spacing">This is heading 1</h1>
+	<h2 class="spacing">This is heading 2</h2>
+	<hr>
+	<p>
+		This is a paragraph with a standard line-height.<br> The default
+		line height in most browsers is about 110% to 120%.<br>
+	</p>
+
+	<p class="small">
+		This is a paragraph with a smaller line-height.<br> This is a
+		paragraph with a smaller line-height.<br>
+	</p>
+
+	<p class="big">
+		This is a paragraph with a bigger line-height.<br> This is a
+		paragraph with a bigger line-height.<br>
+	</p>
+	<hr>
+	<div>This is default text direction.</div>
+	<div class="ex1">This is right-to-left text direction.</div>
+	<hr>
+	<h1 class="word">This is heading 1</h1>
+	<h2 class="word">This is heading 2</h2>
+	<hr>
+</body>
+</html>
