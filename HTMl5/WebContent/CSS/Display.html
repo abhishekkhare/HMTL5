@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Display</title>
+<style>
+li.class1 {
+	display: inline;
+}
+
+span {
+	display: block;
+}
+
+a {
+	display: block;
+}
+
+h1.hidden {
+	display: none;
+}
+
+h1.hidden1 {
+	visibility: hidden;
+}
+</style>
+
+
+</head>
+<body>
+	<p>Display a list of links as a horizontal menu:</p>
+	<ul>
+		<li class="class1"><a href="/html/default.asp" target="_blank">HTML</a></li>
+		<li class="class1"><a href="/css/default.asp" target="_blank">CSS</a></li>
+		<li class="class1"><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+	</ul>
+	<hr>
+	<span>A display property with a value of "block" results in</span>
+	<span>a line break between the two elements.</span>
+	<hr>
+	<p>Display links as block elements:</p>
+
+	<a href="/html/default.asp" target="_blank">HTML</a>
+	<a href="/css/default.asp" target="_blank">CSS</a>
+	<a href="/js/default.asp" target="_blank">JavaScript</a>
+	<hr>
+	<h1>This is a visible heading</h1>
+	<h1 class="hidden">This is a hidden heading</h1>
+	<p>Notice that the h1 element with display: none; does not take up
+		any space.</p>
+	<hr>
+	<h1>This is a visible heading</h1>
+	<h1 class="hidden1">This is a hidden heading</h1>
+	<p>Notice that the hidden heading still takes up space.</p>
+	<hr>
+</body>
+</html>
